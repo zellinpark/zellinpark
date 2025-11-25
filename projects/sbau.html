@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBAU</title>
+
+    <style>
+        body {margin: 10px;
+            font-family: pretendard, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: black;
+            letter-spacing: -0.5px;
+            line-height: 140%;
+            overflow-x: hidden; /* Prevent horizontal scrolling */}
+
+        footer {width: 1728px;
+                background-color: white;
+                position: fixed;
+                bottom: 0;
+                margin: 0;
+        }
+        
+        
+        #header {color: black;
+                text-align: left;
+                display: flex;
+                width: 1728px;
+                height: 35px;}
+
+        #logo {color:black;
+                width: 270px;}
+
+        #logo a {
+            color: black; /* 텍스트 색상을 흰색에서 검정색으로 변경 */ 
+            text-decoration: none;
+            font-size: 12px;
+            }
+
+        #nav-site ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;}
+
+        #nav-site li {
+            width: 120px;}
+
+        #nav-site a {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        #project_basic {
+            color: black;
+            display: flex;
+            
+        }
+
+        #project_name {
+            color: black;
+            width: 270px;
+            display: block;
+
+        }
+
+        #project_name a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #project_info {
+            color: black;
+            display: flex;
+            width: 120px;
+        }
+
+        #project_date {
+            color: black;
+            display: flex;
+            width: 200px;
+        }
+
+        #project_img img{
+           
+            height: auto;
+            display: block;
+            margin-bottom: 3px;
+            
+        }
+
+        #project_img video{
+           
+           height: auto;
+           display: block;
+           margin-bottom: 3px;
+           
+       }
+
+
+        /* 미디어 쿼리 */
+        @media (max-width: 540px) { /* 모바일 기준 */
+
+            #header { width: 100%; }
+
+
+            #project_basic {
+            flex-direction: column; /* 세로 방향 */
+            }
+
+            #project_img img{
+            margin-bottom: 3px;
+            width: 100%;
+            height: auto;
+            }
+
+            #project_img video {
+            margin-bottom: 3px;
+            width: 100%;
+            height: auto;
+            }
+
+        }
+
+        @media (min-width: 541px) and (max-width: 768px) { /* 모바일 기준 */
+
+            #header { width: 100%; }
+
+
+            #project_basic {
+            flex-direction: column; /* 세로 방향 */
+            }
+
+            #project_img img{
+            margin-bottom: 3px;
+            width: 100%;
+            height: auto;
+            }
+
+            #project_img video {
+            margin-bottom: 3px;
+            width: 100%;
+            height: auto;
+            }
+
+        } 
+
+
+        
+
+
+        /* 텍스트 선택 스타일 */
+        ::selection {
+            background: black; /* 선택된 텍스트의 배경색 */
+            color: white; /* 선택된 텍스트의 색상 */
+        }
+
+        /* 웹킷 브라우저 (크롬, 사파리)용 텍스트 선택 스타일 */
+        ::-webkit-selection {
+            background: black; /* 선택된 텍스트의 배경색 */
+            color: white; /* 선택된 텍스트의 색상 */
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="header">
+        <div id="logo">
+            <a href="../index.html">ZELLINPARK</a>
+        </div>
+
+        <div id="nav-site">
+            <ul>
+                <li class="projects">
+                    <a href="projects.html">
+                    <span class="title">PROJECTS</span>
+                    </a>
+                </li>
+                <li class="contact">
+                    <a href="contact.html">
+                    <span class="contact">CONTACT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div id="project_basic">
+        <div id="project_name">
+            SBAU
+        </div>
+        <div id="project_info">
+            Brand Identity <br>
+            Merchandise
+        </div>
+        <div id="project_date">
+            June. 2023
+        </div>
+
+        <div id="project_img">
+            <img src="../img/21.png" width="400px">
+            <img src="../img/22.png" width="600px">
+            <img src="../img/24.png" width="600px">
+            
+        </div>
+
+    </div>
+
+
+   
+
+
+    
+    
+
+
+
+
+</body>
+
+<footer>
+    Based in London, Brand eXperience Design.
+
+</footer>
+
+</html>

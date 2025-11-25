@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZELLINPARK</title>
+
+    <style>
+        body {margin: 10px;
+            font-family: pretendard, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: black;
+            letter-spacing: -0.5px;
+            line-height: 140%;
+            overflow-x: hidden; /* Prevent horizontal scrolling */}
+
+        footer {width: 100%;
+                background-color: white;
+                position: fixed;
+                bottom: 0;
+                margin: 0;
+        }
+        
+        
+        #header {color: black;
+                text-align: left;
+                display: flex;
+                width: 1728px;
+                height: 35px;}
+
+        #logo {color:black;
+                width: 270px;}
+
+        #logo a {
+            color: black; /* 텍스트 색상을 흰색에서 검정색으로 변경 */ 
+            text-decoration: none;
+            font-size: 12px;
+            }
+
+        #nav-site ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;}
+
+        #nav-site li {
+            width: 120px;}
+
+        #nav-site a{
+            color: black;
+            text-decoration: none;
+        }
+
+        #container {
+            display: flex; /*Flexbox로 설정 */
+            flex-wrap: wrap; /*여러 줄로 감싸기 */
+            gap: 1px;
+        }
+
+        #info {
+            color: black;
+            width: 425px;
+            margin-bottom: 6px;
+        }
+
+        #project_info {
+            position: relative;
+            display: block;
+            line-height: 15px;
+            width: 100%;
+            color: black;
+            word-break: keep-all;
+            box-sizing: border-box;
+        }
+
+        #project_image img{
+            width: 100%;
+            height: auto;
+        }
+
+        
+
+        #project_name {
+            color: black;
+            margin: 0;
+            display: inline-block;
+            width: 320px;
+            
+        }
+
+        #project_type {
+            color: black;
+            margin: 0;
+            width: 50px;
+            display: inline-block;
+        }
+
+        #project_date {
+            color: black;
+            margin: 0;
+            display: inline-block;
+        }
+
+        #project_blank {
+            color: white;
+            margin: 0;
+            display: inline-block;
+            width: 320px;
+        }
+
+        /* Ensuring all links, including visited ones, have the same style */
+        a, a:visited, a:hover, a:active {
+            color: black; /* 링크 텍스트 색상 */
+            text-decoration: none; /* 밑줄 제거 */
+        }
+
+        
+
+
+
+        /* 미디어 쿼리 */
+        @media (max-width: 540px) { /* 모바일 기준 */
+            #header { width: 100%; }
+
+            #info {
+                width: 100%; /* 모바일에서 꽉 차게 설정 */
+                margin-bottom: 10px; /* 아래 여백 추가 */
+            }
+
+            
+
+            #project_name, #project_type, #project_date {
+                display: block;
+                width: 100%;
+                margin-bottom: 5px; /* 요소 간에 약간의 여백 추가 */
+            }
+
+            #project_blank {
+                display: none; /* 모바일에서 숨김 */
+            }
+
+           
+        }
+
+        
+        @media (min-width: 541px) and (max-width: 768px) {
+            /* 태블릿 기준 */
+           
+            #info {
+             width: calc(50% - 10px); /* 화면 너비의 50% 차지 */
+             margin-bottom: 10px;
+            }
+            
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            /* 작은 데스크탑 기준 */
+           
+            #info {
+             width: calc(33.3% - 7px); /* 화면 너비의 50% 차지 */
+             margin-bottom: 10px;
+            }
+            
+        }
+
+
+        @media (min-width: 1025px) {
+        /* 큰 데스크탑 기준 */
+        
+         #info {
+          width: calc(25% - 0.75px); /* 화면 너비의 25% 차지 */
+          margin-bottom: 10px;
+         }
+         
+        }
+
+
+
+        /* 텍스트 선택 스타일 */
+        ::selection {
+            background: black; /* 선택된 텍스트의 배경색 */
+            color:  white; /* 선택된 텍스트의 색상 */
+        }
+
+        /* 웹킷 브라우저 (크롬, 사파리)용 텍스트 선택 스타일 */
+        ::-webkit-selection {
+            background: black; /* 선택된 텍스트의 배경색 */
+            color: white; /* 선택된 텍스트의 색상 */
+        }
+
+
+                
+
+
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="header">
+        <div id="logo">
+            <a href="../index.html">ZELLINPARK</a>
+        </div>
+
+        <div id="nav-site">
+            <ul>
+                <li class="projects">
+                    <a href="projects.html" class="active current-">
+                    <span class="title">PROJECTS</span>
+                    </a>
+                </li>
+                <li class="contact">
+                    <a href="contact.html">
+                    <span class="contact">CONTACT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="container">
+
+        <div id="info">
+            <a href="daegu.html">
+                <div id="project_info">
+                    <div id="project_image">
+                    <img src="../img/36.png" width="425px" height="300px"></div>
+                    <div id="project_name">DAEGU City Rebranding</div>
+                    <div id="project_type">Branding</div>
+                    <div id="project_blank"></div>
+                    <div id="project_date">2024</div>
+                </div>
+            </a>
+        </div>
+
+
+        <div id="info">
+            <a href="adidas-children.html">
+                <div id="project_info">
+                    <div id="project_image">
+                    <img src="../img/31.png" width="425px" height="300px"></div>
+                    <div id="project_name">ADIDAS x Children's Day Promotion</div>
+                    <div id="project_type">Branding</div>
+                    <div id="project_blank"></div>
+                    <div id="project_date">2024</div>
+                </div>
+            </a>
+        </div>
+
+
+        <div id="info">
+            <a href="musinsa.html">
+                <div id="project_info">
+                    <div id="project_image">
+                    <img src="../img/6.png" width="425px" height="300px"></div>
+                    <div id="project_name">musinsa</div>
+                    <div id="project_type">Branding</div>
+                    <div id="project_blank"></div>
+                    <div id="project_date">2024</div>
+                </div>
+            </a>
+        </div>
+
+
+        <div id="info">
+            <a href="leey.html">
+                <div id="project_info">
+                    <div id="project_image">
+                    <img src="../img/26.png" width="425px" height="300px"></div>
+                    <div id="project_name">leey</div>
+                    <div id="project_type">Branding</div>
+                    <div id="project_blank"></div>
+                    <div id="project_date">2024</div>
+                </div>
+            </a>
+        
+        </div>
+
+        <div id="info">
+            <a href="woman.html">
+                <div id="project_info">
+                    <div id="project_image">
+                    <img src="../img/19.png" width="425px" height="300px"></div>
+                    <div id="project_name">WOMAN</div>
+                    <div id="project_type">Typography</div>
+                    <div id="project_blank"></div>
+                    <div id="project_date">2023</div>
+                </div>
+            </a>
+        
+        </div>
+
+
+        <div id="info">
+            <a href="bang.html">
+                <div id="project_info">
+                    <div id="project_image">
+                    <img src="../img/1.png" width="425px" height="300px"></div>
+                    <div id="project_name">BANG!!</div>
+                    <div id="project_type">Branding</div>
+                    <div id="project_blank"></div>
+                    <div id="project_date">2023</div>
+                </div>
+            </a>
+        </div>
+
+
+        <div id="info">
+            <a href="everywear.html">
+                <div id="project_info">
+                    <div id="project_image">
+                    <img src="../img/11.png" width="425px" height="300px"></div>
+                    <div id="project_name">every)wear(</div>
+                    <div id="project_type">Branding</div>
+                    <div id="project_blank"></div>
+                    <div id="project_date">2023</div>
+                </div>
+            </a>
+        </div>
+
+
+        <div id="info">
+            <a href="sbau.html">
+                <div id="project_info">
+                    <div id="project_image">
+                    <img src="../img/25.png" width="425px" height="300px"></div>
+                    <div id="project_name">SBAU</div>
+                    <div id="project_type">Branding</div>
+                    <div id="project_blank"></div>
+                    <div id="project_date">2023</div>
+                </div>
+            </a>
+        
+        </div>
+
+        
+
+    </div>
+
+</body>
+
+
+
+<footer>
+    Based in London, Brand eXperience Design.
+
+</footer>
+
+
+
+</html>
