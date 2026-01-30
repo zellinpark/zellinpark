@@ -212,7 +212,7 @@
         </div>
 
         <div id="project_img">
-            <video width="400px" autoplay muted loop>
+            <video class="autoplay" width="600" muted loop playsinline preload="metadata" controls>
                 <source src="../img/1.mp4" type="video/mp4">
             </video>
             <img src="../img/2.png" width="600px">
@@ -224,7 +224,20 @@
     </div>
 
 
-   
+  <script>
+  function tryPlayAll() {
+    document.querySelectorAll('video.autoplay').forEach(v => {
+      v.muted = true;
+      v.playsInline = true;
+      const p = v.play();
+      if (p) p.catch(() => {});
+    });
+  }
+
+  window.addEventListener('DOMContentLoaded', tryPlayAll);
+  window.addEventListener('touchstart', tryPlayAll, { once: true });
+  window.addEventListener('click', tryPlayAll, { once: true });
+</script> 
 
 
     
