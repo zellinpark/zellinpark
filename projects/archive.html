@@ -221,7 +221,20 @@
 
    
 
+<script>
+  function tryPlayAll() {
+    document.querySelectorAll('video.autoplay').forEach(v => {
+      v.muted = true;
+      v.playsInline = true;
+      const p = v.play();
+      if (p) p.catch(() => {});
+    });
+  }
 
+  window.addEventListener('DOMContentLoaded', tryPlayAll);
+  window.addEventListener('touchstart', tryPlayAll, { once: true });
+  window.addEventListener('click', tryPlayAll, { once: true });
+</script>
     
     
 
